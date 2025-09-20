@@ -14,17 +14,17 @@ The ultimate goal is to implement a **specific application** on a chip by design
 
 The design process is organized into progressive stages, with functional equivalence checks at every step.
 
-### **Stage O0 — Baseline Software**
+### **Stage O0**
 
 * Start with the target C application.
-* Compile using **GCC** with `-O0` to obtain an unoptimized reference binary.
+* Compile using **GCC**.
 
-### **Stage O1 — Optimized Software**
+### **Stage O1**
 
-* Compile the same application with `-O1` (or the desired optimization level).
+* Compile the same application with it's specs.
 * Compare outputs of O0 and O1 to ensure functional equivalence. Only proceed if they match.
 
-### **Stage O2 — RTL Hardware Modeling**
+### **Stage O2**
 
 * Convert the application specification into **RTL (Register Transfer Level)** code, typically in **Verilog/SystemVerilog**.
 * Simulate and verify that RTL outputs match the O1 software outputs.
